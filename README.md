@@ -43,13 +43,10 @@ a. Id, b. Sender, c. Receiver, d. Message, e. Status, f. SentTime
 ### Controllers/API:
 #### User Module:
 1. Create user with authentication
-
 2. Create User:
-a. Sent a message to the user queue to create the wallet for the user.
-
+  a. Sent a message to the user queue to create the wallet for the user.
 3. Get User
 If the user is already inside the cache, then simply return it or otherwise fetch it from the DB & then return.
-
 4. Load user details on the basis of the username.
 
 #### Wallet Module:
@@ -59,9 +56,7 @@ If the user is already inside the cache, then simply return it or otherwise fetc
 #### Transaction Module:
 #### Transact:
 a. Check if the Wallet Receiver Exists from the cache.
-
 b. Check for the User's balance and if it is more than the transaction amount, then process the transaction.
-
 c. Send the notification to the wallet to deduct the amount.
 
 #### Notification Module:
@@ -81,7 +76,7 @@ c. Send the notification to the wallet to deduct the amount.
 
 **Database:** MySQL
 
-**Spring Modules:** Hibernate, Spring JPA Spring Security. 
+**Spring Modules:** Hibernate, Spring JPA, Spring Security. 
 
 **Message Queues:** Kafka
 
