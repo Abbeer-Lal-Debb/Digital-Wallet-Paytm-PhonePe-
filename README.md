@@ -66,8 +66,6 @@ c. Send the notification to the wallet to deduct the amount.
 
 ## Tech Stack
 
-**Client:**  HTML, CSS, JavaScript
-
 **Programming Language:** Java
 
 **Backend Framework:** Spring Boot
